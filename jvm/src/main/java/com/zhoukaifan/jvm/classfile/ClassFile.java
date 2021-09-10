@@ -37,7 +37,7 @@ public class ClassFile {
         }
         classFile.minorVersion = byteBuffer.getShort();
         classFile.mainVersion = byteBuffer.getShort();
-        log.debug("fileCode:0xCAFEBABE    minorVersion:{}    mainVersion:{}",classFile.minorVersion,classFile.mainVersion);
+//        log.debug("fileCode:0xCAFEBABE    minorVersion:{}    mainVersion:{}",classFile.minorVersion,classFile.mainVersion);
         short constantsLength = byteBuffer.getShort();
         classFile.constants = new ClassConstant[constantsLength];
         classFile.constants[0] = ClassConstant.UNDEFINED;
